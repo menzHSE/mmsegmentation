@@ -2,6 +2,18 @@
 from mmengine.utils import is_str
 
 
+
+def stihl_classes():
+    """STIHL class names for external use."""
+    return [
+        'Unlabeled', 'Ego','NaturalGround','Boundary:Wall','Boundary:Fence','Boundary:Hedge','Boundary:Building','GenericObject','Vegetation','Lawn','Sky','DockingStation','DockingPad','ArtificialGround','ArtificialFlatObject','iMOW','Tool','Human:Adult','Human:Child','Distortion','NaturalFlatObject','Animal:Dog','Furniture'
+    ]
+
+
+def stihl_palette():
+    """STIHL palette for external use."""
+    return [[0,0,0],[255,255,0],[0,255,255],[64,64,64],[148,94,37],[78,148,37],[78,148,10],[0,64,255],[0,128,0],[0,255,0],[0,128,255],[255,0,0],[128,0,0],[128,128,128],[255,0,128],[255,128,0],[64,64,0],[255,10,10],[255,20,20],[200,200,200],[15,255,30],[255,128,128],[200,200,200]]
+
 def cityscapes_classes():
     """Cityscapes class names for external use."""
     return [
@@ -10,6 +22,9 @@ def cityscapes_classes():
         'person', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle',
         'bicycle'
     ]
+
+
+
 
 
 def ade_classes():
@@ -421,6 +436,7 @@ def lip_palette():
 
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
+    'stihl': ['stihl'],
     'ade': ['ade', 'ade20k'],
     'voc': ['voc', 'pascal_voc', 'voc12', 'voc12aug'],
     'loveda': ['loveda'],

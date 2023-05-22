@@ -118,3 +118,4 @@ mmseg/.mim
 
 # Pytorch
 *.pth
+._.DS_Store
