@@ -1,6 +1,6 @@
 _base_ = [
     '../_base_/models/fast_scnn.py', '../_base_/datasets/stihl_mod32.py',
-    '../_base_/default_runtime.py', '../_base_/schedules/schedule_160k.py'
+    '../_base_/default_runtime.py', '../_base_/schedules/schedule_160k_stihl.py'
 ]
 crop_size = (512, 672)
 data_preprocessor = dict(size=crop_size)
